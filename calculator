@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜 계산기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input[type="date"], button {
+            margin: 10px 0;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4285F4;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>날짜 차이 계산기</h1>
+        <p>두 날짜 간의 차이를 계산하세요:</p>
+
+        <label for="start-date">시작 날짜:</label>
+        <input type="date" id="start-date" required>
+        
+        <label for="end-date">종료 날짜:</label>
+        <input type="date" id="end-date" required>
+
+        <button onclick="calculateDifference()">계산하기</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateDifference() {
+            const startDate = new Date(document.getElementById('start-date').value);
+            const endDate = new Date(document.getElementById('end-date').value);
+
+            // 날짜가 올바르게 입력되었는지 확인
+            if (isNaN(startDate) || isNaN(endDate)) {
+                document.getElementById('result').textContent = "날짜를 올바르게 입력하세요.";
+                return;
+            }
+
+            // 날짜 차이를 계산 (밀리초 단위)
+            const timeDifference = endDate - startDate;
+            const dayDifference = timeDifference / (1000 * 60 * 60 * 24);
+
+            // 결과 표시
+            if (dayDifference >= 0) {
+                document.getElementById('result').textContent = `두 날짜의 차이는 ${Math.floor(dayDifference)}일입니다.`;
+            } else {
+                document.getElementById('result').textContent = "종료 날짜가 시작 날짜보다 이전입니다.";
+            }
+        }
+    </script>
+</body>
+</html>
