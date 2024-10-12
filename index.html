@@ -11,11 +11,33 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
         }
-        
+
+        header {
+            background-color: #4285F4;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             background-color: white;
             width: 100%;
@@ -74,15 +96,28 @@
             margin-bottom: 10px;
             color: #333;
         }
+
+        .tool-title {
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
+
+<header>
+    <nav>
+        <a href="#bmi-calculator">BMI 계산기</a>
+        <a href="#date-calculator">날짜 차이 계산기</a>
+        <a href="#password-generator">비밀번호 생성기</a>
+        <a href="#unit-converter">단위 변환기</a>
+    </nav>
+</header>
 
 <div class="container">
     <h1>유용한 도구들</h1>
 
     <!-- BMI 계산기 -->
-    <div class="tool">
+    <div class="tool" id="bmi-calculator">
         <div class="tool-title">BMI 계산기</div>
         <input type="number" id="weight" placeholder="몸무게 (kg)" required>
         <input type="number" id="height" placeholder="키 (cm)" required>
@@ -91,7 +126,7 @@
     </div>
 
     <!-- 날짜 계산기 -->
-    <div class="tool">
+    <div class="tool" id="date-calculator">
         <div class="tool-title">날짜 차이 계산기</div>
         <input type="date" id="start-date" required>
         <input type="date" id="end-date" required>
@@ -100,14 +135,14 @@
     </div>
 
     <!-- 비밀번호 생성기 -->
-    <div class="tool">
+    <div class="tool" id="password-generator">
         <div class="tool-title">비밀번호 생성기</div>
         <button onclick="generatePassword()">비밀번호 생성</button>
         <p id="password"></p>
     </div>
 
     <!-- 단위 변환기 -->
-    <div class="tool">
+    <div class="tool" id="unit-converter">
         <div class="tool-title">단위 변환기</div>
         <input type="number" id="value" placeholder="변환할 값" required>
         <select id="unit1">
