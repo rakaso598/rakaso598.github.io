@@ -156,6 +156,16 @@
         <button onclick="convert()">변환</button>
         <p id="unit-result"></p>
     </div>
+
+    <!-- 단어 수 세기기 -->
+    <div class="container">
+        <h1>단어 수 세기</h1>
+        <textarea id="text-input" placeholder="여기에 텍스트를 입력하세요..." oninput="countWords()"></textarea>
+        <p class="result" id="word-count">단어 수: 0</p>
+        <button onclick="resetText()">초기화</button>
+    </div>
+
+    
 </div>
 
 <script>
@@ -213,6 +223,19 @@
 
         document.getElementById("unit-result").textContent = `결과: ${result.toFixed(4)}`;
     }
+
+    // 단어 수 세기
+    function countWords() {
+        const text = document.getElementById("text-input").value.trim();
+        const wordCount = text ? text.split(/\s+/).length : 0;
+        document.getElementById("word-count").textContent = `단어 수: ${wordCount}`;
+    }
+
+    function resetText() {
+        document.getElementById("text-input").value = "";
+        document.getElementById("word-count").textContent = "단어 수: 0";
+    }
+
 </script>
 
 </body>
