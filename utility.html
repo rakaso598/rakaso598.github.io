@@ -157,11 +157,11 @@
         <p id="unit-result"></p>
     </div>
 
-    <!-- 단어 수 세기기 -->
-    <div class="container">
-        <h1>단어 수 세기</h1>
+    <!-- 단어 수 세기 -->
+    <div class="tool" id="word-count">
+        <div class="tool-title">단어 수 세기</div>
         <textarea id="text-input" placeholder="여기에 텍스트를 입력하세요..." oninput="countWords()"></textarea>
-        <p class="result" id="word-count">단어 수: 0</p>
+        <p class="result">단어 수: 0</p>
         <button onclick="resetText()">초기화</button>
     </div>
 
@@ -231,6 +231,7 @@
         document.getElementById("word-count").textContent = `단어 수: ${wordCount}`;
     }
 
+    // 초기화 함수
     function resetText() {
         document.getElementById("text-input").value = "";
         document.getElementById("word-count").textContent = "단어 수: 0";
