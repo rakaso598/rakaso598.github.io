@@ -1,25 +1,12 @@
-# My GitHub Pages Blog
+# Gallery Page with Modal
 
-Welcome to my personal blog and resource repository hosted on GitHub Pages. This site will serve as a platform to showcase my projects, share useful information, and store important resources that I will update over time.
-
-## Purpose
-This GitHub Pages site is used as:
-- A personal blog to document my development journey.
-- A place to share and store various resources related to my work and learning.
-- A showcase for my projects and other creative endeavors.
+This is a responsive gallery page featuring clickable cards that open a modal to display detailed information. It's optimized for both mobile and desktop users, and the modals provide a user-friendly way to view content in more depth.
 
 ## Features
-- Simple and clean design.
-- Easy access to my projects and resources.
-- Regular updates and posts about my development experiences.
+- **Responsive design**: Works seamlessly on both desktop and mobile devices.
+- **Interactive cards**: Hover effect and click to open modal.
+- **Modal display**: Click on a card to open a modal with more detailed content.
+- **Close modal**: Close the modal by clicking the "X" in the top-right corner.
 
-## Visit My Blog
-You can check out my blog and explore the projects here:
-
-[**Visit My Blog**](https://rakaso598.github.io)
-
-## Contact
-You can reach me at my GitHub profile for more details or inquiries:
-
-[**My GitHub Profile**](https://github.com/rakaso598)
-
+## Demo
+[Check out the live demo here](https://rakaso598.github.io/)
