@@ -9,4 +9,4 @@ This is a responsive gallery page featuring clickable cards that open a modal to
 - **Close modal**: Close the modal by clicking the "X" in the top-right corner.
 
 ## Demo
-[Check out the live demo here](https://rakaso598.github.io/)
+[Check out the live demo here](https://rakaso598.github.io/)  
