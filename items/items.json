@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "author": "rakaso598",
+        "profile_image": "/images/profile1.jpg",
+        "content": "오늘은 정말 멋진 날이에요! 😊",
+        "image": "/images/post1.jpg",
+        "timestamp": "2025-01-26 12:30",
+        "likes": 150,
+        "comments": [
+            {
+                "author": "user1",
+                "text": "정말 멋진 날이네요!"
+            },
+            {
+                "author": "user2",
+                "text": "사진이 예술이에요!"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "author": "user123",
+        "profile_image": "/images/profile2.jpg",
+        "content": "새로운 프로젝트를 시작했어요. 많이 기대해주세요!",
+        "image": "/images/project.jpg",
+        "timestamp": "2025-01-25 18:45",
+        "likes": 98,
+        "comments": [
+            {
+                "author": "user3",
+                "text": "응원합니다! 화이팅!"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "author": "developer_jane",
+        "profile_image": "/images/profile3.jpg",
+        "content": "오늘은 아무것도 안 하고 쉬는 날! 🛋️",
+        "image": null,
+        "timestamp": "2025-01-24 14:15",
+        "likes": 200,
+        "comments": []
+    }
+]
