@@ -1,9 +1,17 @@
 [
     {
-        "id": 1,
+        "id": 3,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
-        "content": "오늘은 정말 멋진 날이에요! 😊",
+        "content": "제 블로그도 방문해주실래요? 😊 https://rexondex.tistory.com/",
+        "image": "/images/post3.jpg",
+        "timestamp": "2025-01-26 17:41"
+    },
+    {
+        "id": 3,
+        "author": "rakaso598",
+        "profile_image": "/images/profile1.jpg",
+        "content": "오늘은 정말 멋진 날이에요!",
         "image": "/images/post1.jpg",
         "timestamp": "2025-01-26 12:30"
     },
@@ -16,11 +24,11 @@
         "timestamp": "2025-01-25 18:45"
     },
     {
-        "id": 3,
+        "id": 1,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
         "content": "오늘은 아무것도 안 하고 쉬는 날! 🛋️",
         "image": null,
         "timestamp": "2025-01-24 14:15"
-    }
+    },
 ]
