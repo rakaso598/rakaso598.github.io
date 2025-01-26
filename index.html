@@ -79,10 +79,16 @@
 <script>
     // JSON 파일 로드
     fetch('/items/items.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to load JSON file');
+            }
+            return response.json();
+        })
         .then(data => {
             const feed = document.getElementById('feed');
 
+            // 게시물 반복 생성
             data.forEach(post => {
                 const postElement = document.createElement('div');
                 postElement.className = 'post';
@@ -90,7 +96,7 @@
                 // Header
                 const profileImage = post.profile_image 
                     ? `<img src="${post.profile_image}" alt="Profile">`
-                    : `<img alt="No Profile">`;
+                    : `<img style="background-color: #fff;" alt="No Profile">`;
 
                 const header = `
                     <div class="post-header">
@@ -113,6 +119,7 @@
                 // Combine sections
                 postElement.innerHTML = header + content;
 
+                // Feed에 추가
                 feed.appendChild(postElement);
             });
         })
