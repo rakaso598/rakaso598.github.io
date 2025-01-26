@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Feed</title>
     <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f2f5;
-            color: #333;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
@@ -85,20 +79,6 @@
             cursor: pointer;
         }
 
-        .comments {
-            padding: 15px;
-            border-top: 1px solid #eee;
-        }
-
-        .comments .comment {
-            margin-bottom: 10px;
-            font-size: 0.9rem;
-        }
-
-        .comments .comment .author {
-            font-weight: bold;
-        }
-
         @media (max-width: 600px) {
             .container {
                 padding: 10px;
@@ -111,7 +91,8 @@
 <div class="container" id="feed"></div>
 
 <script>
-    fetch('/item/items.json')
+    // JSON 파일 로드
+    fetch('/items/items.json')
         .then(response => response.json())
         .then(data => {
             const feed = document.getElementById('feed');
@@ -147,25 +128,13 @@
                     </div>
                 `;
 
-                // Comments
-                const comments = post.comments.map(comment => `
-                    <div class="comment">
-                        <span class="author">${comment.author}:</span> ${comment.text}
-                    </div>
-                `).join('');
-
-                const commentsSection = `
-                    <div class="comments">
-                        ${comments}
-                    </div>
-                `;
-
-                // Combine post sections
-                postElement.innerHTML = header + content + footer + (comments ? commentsSection : '');
+                // Combine sections
+                postElement.innerHTML = header + content + footer;
 
                 feed.appendChild(postElement);
             });
-        });
+        })
+        .catch(error => console.error('Error loading JSON:', error));
 </script>
 
 </body>
