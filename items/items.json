@@ -10,15 +10,15 @@
     {
         "id": 2,
         "author": "rakaso598",
-        "profile_image": null,
+        "profile_image": "/images/profile1.jpg",
         "content": "새로운 프로젝트를 시작했어요. 많이 기대해주세요!",
-        "image": "/images/project.jpg",
+        "image": "/images/post2.jpg",
         "timestamp": "2025-01-25 18:45"
     },
     {
         "id": 3,
         "author": "rakaso598",
-        "profile_image": null,
+        "profile_image": "/images/profile1.jpg",
         "content": "오늘은 아무것도 안 하고 쉬는 날! 🛋️",
         "image": null,
         "timestamp": "2025-01-24 14:15"
