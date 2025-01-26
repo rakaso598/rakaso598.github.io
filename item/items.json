@@ -1,0 +1,14 @@
+[
+    {
+        "id": "250125",
+        "title": "안녕하세요!",
+        "description": "[24.10.21] 첫번째 포스트입니다!",
+        "content": "여기는 본문이에요. 텍스트나 사진 등등 컨텐츠를 넣을 수 있어요. 앞으로도 잘부탁드립니다"
+    },
+    {
+        "id": "250126",
+        "title": "Gallery Item 2",
+        "description": "This is the second post!",
+        "content": "This is detailed content for the second post."
+    }
+]
