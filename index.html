@@ -5,7 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rakaso598's Gallery</title>
     <style>
-        /* 기존 스타일 그대로 유지 */
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4a4a4a;
+            margin: 40px 0;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+        }
+
+        .card-body h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .modal-content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .modal-content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: #555;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close:hover {
+            color: #2575fc;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card-body h3 {
+                font-size: 1.2rem;
+            }
+            .card-body p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
