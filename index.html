@@ -38,6 +38,7 @@
             height: 40px;
             border-radius: 50%;
             margin-right: 10px;
+            background-color: #f0f0f0;
         }
 
         .post-header .author {
@@ -64,21 +65,6 @@
             margin-top: 10px;
         }
 
-        .post-footer {
-            padding: 10px 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #eee;
-        }
-
-        .post-footer button {
-            background: none;
-            border: none;
-            color: #2575fc;
-            cursor: pointer;
-        }
-
         @media (max-width: 600px) {
             .container {
                 padding: 10px;
@@ -102,9 +88,13 @@
                 postElement.className = 'post';
 
                 // Header
+                const profileImage = post.profile_image 
+                    ? `<img src="${post.profile_image}" alt="Profile">`
+                    : `<img alt="No Profile">`;
+
                 const header = `
                     <div class="post-header">
-                        <img src="${post.profile_image}" alt="Profile">
+                        ${profileImage}
                         <div>
                             <div class="author">${post.author}</div>
                             <div class="timestamp">${post.timestamp}</div>
@@ -120,16 +110,8 @@
                     </div>
                 `;
 
-                // Footer
-                const footer = `
-                    <div class="post-footer">
-                        <button>❤️ ${post.likes}</button>
-                        <button>💬 ${post.comments.length} Comments</button>
-                    </div>
-                `;
-
                 // Combine sections
-                postElement.innerHTML = header + content + footer;
+                postElement.innerHTML = header + content;
 
                 feed.appendChild(postElement);
             });
