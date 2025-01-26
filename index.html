@@ -5,226 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rakaso598's Gallery</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f1f6;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #4f4f4f;
-            margin-top: 40px;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            padding: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: opacity 0.3s;
-        }
-
-        .card-body {
-            padding: 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-        }
-
-        .card-body h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-        }
-
-        .card-body p {
-            font-size: 1rem;
-            opacity: 0.8;
-        }
-
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            background-color: #fff;
-            border-radius: 15px;
-            padding: 30px;
-            width: 90%;
-            max-width: 600px;
-            text-align: center;
-            position: relative;
-        }
-
-        .modal-content h2 {
-            color: #4f4f4f;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        .modal-content p {
-            color: #777;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 28px;
-            color: #333;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-
-        .close:hover {
-            color: #2575fc;
-        }
-
-        /* Mobile-friendly adjustments */
-        @media (max-width: 600px) {
-            .container {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            }
-
-            .card-body h3 {
-                font-size: 1.2rem;
-            }
-
-            .card-body p {
-                font-size: 0.9rem;
-            }
-
-            .modal-content {
-                width: 95%;
-                padding: 20px;
-            }
-        }
+        /* 기존 스타일 그대로 유지 */
     </style>
 </head>
 <body>
 
 <h1>rakaso598's Gallery</h1>
 
-<div class="container">
-    <div class="card" onclick="openModal(1)">
-        <!-- <img src="https://via.placeholder.com/300x200" alt="Gallery Image 1"> -->
-        <div class="card-body">
-            <h3>Gallery Item 1</h3>
-            <p>This is a description of the first gallery item.</p>
-        </div>
-    </div>
+<div class="container" id="gallery"></div>
 
-    <div class="card" onclick="openModal(2)">
-        <!-- <img src="https://via.placeholder.com/300x200" alt="Gallery Image 2"> -->
-        <div class="card-body">
-            <h3>Gallery Item 2</h3>
-            <p>This is a description of the second gallery item.</p>
-        </div>
-    </div>
-
-    <div class="card" onclick="openModal(3)">
-        <!-- <img src="https://via.placeholder.com/300x200" alt="Gallery Image 3"> -->
-        <div class="card-body">
-            <h3>Gallery Item 3</h3>
-            <p>This is a description of the third gallery item.</p>
-        </div>
-    </div>
-
-    <div class="card" onclick="openModal(4)">
-        <!-- <img src="https://via.placeholder.com/300x200" alt="Gallery Image 4"> -->
-        <div class="card-body">
-            <h3>안녕하세요!</h3>
-            <p>[24.10.21] 첫번째 포스트입니다!</p>
-        </div>
-    </div>
-</div>
-
-<!-- Modal 1 -->
-<div id="modal1" class="modal">
+<!-- Modal Template -->
+<div id="modal" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="closeModal(1)">&times;</span>
-        <h2>Gallery Item 1</h2>
-        <p>This is detailed information about the first gallery item. You can include more text or images here.</p>
-    </div>
-</div>
-
-<!-- Modal 2 -->
-<div id="modal2" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal(2)">&times;</span>
-        <h2>Gallery Item 2</h2>
-        <p>This is detailed information about the second gallery item. You can include more text or images here.</p>
-    </div>
-</div>
-
-<!-- Modal 3 -->
-<div id="modal3" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal(3)">&times;</span>
-        <h2>Gallery Item 3</h2>
-        <p>This is detailed information about the third gallery item. You can include more text or images here.</p>
-    </div>
-</div>
-
-<!-- Modal 4 -->
-<div id="modal4" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal(4)">&times;</span>
-        <h2>클릭해서 들어오셨군요!</h2>
-        <p>여기는 본문이에요. 텍스트나 사진 등등 컨텐츠를 넣을 수 있어요. 앞으로도 잘부탁드립니다</p>
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalContent"></p>
     </div>
 </div>
 
 <script>
-    function openModal(modalNumber) {
-        document.getElementById('modal' + modalNumber).style.display = 'flex';
+    // JSON 파일에서 데이터 로드
+    fetch('/item/items.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('gallery');
+
+            data.forEach(item => {
+                // 카드 생성
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.onclick = () => openModal(item);
+
+                card.innerHTML = `
+                    <div class="card-body">
+                        <h3>${item.title}</h3>
+                        <p>${item.description}</p>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        });
+
+    function openModal(item) {
+        document.getElementById('modalTitle').textContent = item.title;
+        document.getElementById('modalContent').textContent = item.content;
+        document.getElementById('modal').style.display = 'flex';
     }
 
-    function closeModal(modalNumber) {
-        document.getElementById('modal' + modalNumber).style.display = 'none';
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
     }
 </script>
 
