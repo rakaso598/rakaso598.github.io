@@ -3,7 +3,7 @@
         "id": 4,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
-        "content": "제 블로그도 방문해주실래요? 😊 https://rexondex.tistory.com/",
+        "content": "제 블로그도 방문해주실래요? 😊 <a href='https://rexondex.tistory.com/'>블로그 링크</a>",
         "image": "/images/post3.jpg",
         "timestamp": "2025-01-26 17:41"
     },
@@ -30,5 +30,5 @@
         "content": "오늘은 아무것도 안 하고 쉬는 날! 🛋️",
         "image": null,
         "timestamp": "2025-01-24 14:15"
-    },
+    }
 ]
