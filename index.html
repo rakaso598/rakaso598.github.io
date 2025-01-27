@@ -3,13 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rakaso Timeline</title>
+    <title>Timeline</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f2f5;
             margin: 0;
             padding: 0;
+        }
+
+        .gnb {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .gnb .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .gnb .menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .gnb .menu a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        .gnb .menu a:hover {
+            color: #000;
         }
 
         .container {
@@ -69,10 +104,28 @@
             .container {
                 padding: 10px;
             }
+
+            .gnb {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .gnb .menu {
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
 <body>
+
+<div class="gnb">
+    <div class="logo">rakaso598</div>
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
 
 <div class="container" id="feed"></div>
 
