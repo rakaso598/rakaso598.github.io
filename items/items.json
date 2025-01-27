@@ -1,5 +1,13 @@
 [
     {
+        "id": 5,
+        "author": "rakaso598",
+        "profile_image": "/images/profile1.jpg",
+        "content": "오늘의 날씨 맑음🌤️, 새해 복 많이 받으세요!",
+        "image": null,
+        "timestamp": "2025-01-27 21:21"
+    },
+    {
         "id": 4,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
