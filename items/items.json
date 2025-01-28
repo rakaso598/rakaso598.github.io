@@ -11,9 +11,9 @@
         "id": 5,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
-        "content": "오늘의 날씨 맑음🌤️, 새해 복 많이 받으세요!",
+        "content": "오늘의 날씨 맑음 🌤️, 새해 복 많이 받으세요!",
         "image": null,
-        "timestamp": "2025-01-27 21:21"
+        "timestamp": "2025-01-27 21:21 (수정됨)"
     },
     {
         "id": 4,
@@ -27,9 +27,9 @@
         "id": 3,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
-        "content": "오늘은 정말 멋진 날이에요!",
+        "content": "타임라인을 오픈했어요!",
         "image": "/images/post1.jpg",
-        "timestamp": "2025-01-26 12:30"
+        "timestamp": "2025-01-26 12:30 (수정됨)"
     },
     {
         "id": 2,
