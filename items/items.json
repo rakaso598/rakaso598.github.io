@@ -1,5 +1,13 @@
 [
     {
+        "id": 8,
+        "author": "rakaso598",
+        "profile_image": "/images/profile1.jpg",
+        "content": "HTML은 무엇일까?<br><br>하이퍼 텍스트 마크업 언어는 웹 페이지 표시를 위해 개발된 지배적인 마크업 언어입니다.<br>원본 - <a href='https://ko.wikipedia.org/wiki/HTML' target='_blank'>위키백과</a>",
+        "image": null,
+        "timestamp": "2025-01-28 23:18"
+    },
+    {
         "id": 7,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
