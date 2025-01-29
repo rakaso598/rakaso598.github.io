@@ -1,5 +1,13 @@
 [
     {
+        "id": 10,
+        "author": "rakaso598",
+        "profile_image": "/images/profile1.jpg",
+        "content": "탄막피하기 게임 해보실래요?🕹️ <a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>바로해보기</a>",
+        "image": "/images/250129_dodge.png",
+        "timestamp": "2025-01-29 14:28"
+    },
+    {
         "id": 9,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
@@ -35,7 +43,7 @@
         "id": 5,
         "author": "rakaso598",
         "profile_image": "/images/profile1.jpg",
-        "content": "오늘의 날씨 맑음 🌤️<br>새해 복 많이 받으세요!",
+        "content": "오늘의 날씨 맑음🌤️, 새해 복 많이 받으세요!",
         "image": null,
         "timestamp": "2025-01-27 21:21 (수정됨)"
     },
