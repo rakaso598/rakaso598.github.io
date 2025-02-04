@@ -3,7 +3,7 @@
 "id": 14,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "■ 타입스크립트를 node에 설치하려면...<br>npm install -g typescript<br>npm install -g ts-node<br>tsc --init (tsconfig.json 생성)",
+"content": "▶타입스크립트를 node에 설치하려면...<br><br>npm install -g typescript<br>npm install -g ts-node<br>tsc --init",
 "image": null,
 "timestamp": "2025-02-04 09:50"
 },
