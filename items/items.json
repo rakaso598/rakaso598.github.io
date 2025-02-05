@@ -1,9 +1,17 @@
 [
 {
+"id": 15,
+"author": "rakaso598",
+"profile_image": "/images/profile1.jpg",
+"content": "▶ Next.js 프로젝트 설치하려면...<br><br>npx create-next-app@latest<br>npm run dev<br><br>git clone 후엔 꼭 npm install 진행하기",
+"image": null,
+"timestamp": "2025-02-05 16:14"
+},
+{
 "id": 14,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "▶타입스크립트를 node에 설치하려면...<br><br>npm install -g typescript<br>npm install -g ts-node<br>tsc --init",
+"content": "▶ 타입스크립트를 node에 설치하려면...<br><br>npm install -g typescript<br>npm install -g ts-node<br>tsc --init",
 "image": null,
 "timestamp": "2025-02-04 09:50"
 },
