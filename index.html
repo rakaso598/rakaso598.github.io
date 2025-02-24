@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline</title>
     <style>
+        /* 구글 폰트 불러오기 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+    
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7f9; /* 밝은 회색 배경 */
+            font-family: 'Noto Sans KR', Arial, sans-serif; /* 기본 폰트 설정 */
+            background-color: #f4f7f9;
             margin: 0;
             padding: 0;
         }
@@ -16,19 +19,20 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background-color: #ffffff; /* 흰색 배경 */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* 약한 그림자 */
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #e1e4e8; /* 옅은 경계선 */
+            border-bottom: 1px solid #e1e4e8;
         }
     
         .gnb .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #34495e; /* 어두운 청회색 로고 */
+            color: #34495e;
+            font-family: 'Roboto', sans-serif; /* 로고에 Roboto 폰트 적용 */
         }
     
         .gnb .menu {
@@ -40,12 +44,12 @@
         .gnb .menu a {
             text-decoration: none;
             font-size: 1rem;
-            color: #5c6f7f; /* 중간 청회색 메뉴 */
+            color: #5c6f7f;
             transition: color 0.3s;
         }
     
         .gnb .menu a:hover {
-            color: #2c3e50; /* 어두운 청회색 호버 */
+            color: #2c3e50;
         }
     
         .container {
@@ -55,9 +59,9 @@
         }
     
         .post {
-            background: #ffffff; /* 흰색 배경 */
+            background: #ffffff;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* 약한 그림자 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
             margin-bottom: 20px;
             overflow: hidden;
         }
@@ -66,7 +70,7 @@
             display: flex;
             align-items: center;
             padding: 15px;
-            border-bottom: 1px solid #e1e4e8; /* 옅은 경계선 */
+            border-bottom: 1px solid #e1e4e8;
         }
     
         .post-header img {
@@ -74,24 +78,25 @@
             height: 40px;
             border-radius: 50%;
             margin-right: 10px;
-            background-color: #e1e4e8; /* 옅은 회색 프로필 배경 */
+            background-color: #e1e4e8;
         }
     
         .post-header .author {
             font-weight: bold;
             font-size: 1rem;
-            color: #34495e; /* 어두운 청회색 작성자 */
+            color: #34495e;
+            font-family: 'Roboto', sans-serif; /* 작성자에 Roboto 폰트 적용 */
         }
     
         .post-header .timestamp {
             font-size: 0.8rem;
-            color: #7f8c8d; /* 중간 회색 타임스탬프 */
+            color: #7f8c8d;
         }
     
         .post-content {
             padding: 15px;
             font-size: 1rem;
-            color: #333; /* 어두운 회색 내용 */
+            color: #333;
         }
     
         .post-content img {
