@@ -7,92 +7,93 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
+            background-color: #f4f7f9; /* 밝은 회색 배경 */
             margin: 0;
             padding: 0;
         }
-
+    
         .gnb {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff; /* 흰색 배경 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* 약한 그림자 */
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #e1e4e8; /* 옅은 경계선 */
         }
-
+    
         .gnb .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #333;
+            color: #34495e; /* 어두운 청회색 로고 */
         }
-
+    
         .gnb .menu {
             display: flex;
             gap: 15px;
             align-items: center;
         }
-
+    
         .gnb .menu a {
             text-decoration: none;
             font-size: 1rem;
-            color: #555;
+            color: #5c6f7f; /* 중간 청회색 메뉴 */
             transition: color 0.3s;
         }
-
+    
         .gnb .menu a:hover {
-            color: #000;
+            color: #2c3e50; /* 어두운 청회색 호버 */
         }
-
+    
         .container {
             max-width: 600px;
             margin: 0 auto;
             padding: 20px;
         }
-
+    
         .post {
-            background: #fff;
+            background: #ffffff; /* 흰색 배경 */
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* 약한 그림자 */
             margin-bottom: 20px;
             overflow: hidden;
         }
-
+    
         .post-header {
             display: flex;
             align-items: center;
             padding: 15px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #e1e4e8; /* 옅은 경계선 */
         }
-
+    
         .post-header img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             margin-right: 10px;
-            background-color: #f0f0f0;
+            background-color: #e1e4e8; /* 옅은 회색 프로필 배경 */
         }
-
+    
         .post-header .author {
             font-weight: bold;
             font-size: 1rem;
+            color: #34495e; /* 어두운 청회색 작성자 */
         }
-
+    
         .post-header .timestamp {
             font-size: 0.8rem;
-            color: #888;
+            color: #7f8c8d; /* 중간 회색 타임스탬프 */
         }
-
+    
         .post-content {
             padding: 15px;
             font-size: 1rem;
-            color: #444;
+            color: #333; /* 어두운 회색 내용 */
         }
-
+    
         .post-content img {
             width: 100%;
             max-height: 300px;
@@ -100,17 +101,17 @@
             border-radius: 10px;
             margin-top: 10px;
         }
-
+    
         @media (max-width: 600px) {
             .container {
                 padding: 10px;
             }
-
+    
             .gnb {
                 flex-direction: column;
                 align-items: flex-start;
             }
-
+    
             .gnb .menu {
                 margin-top: 10px;
             }
