@@ -51,7 +51,7 @@
 "id": 12,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "<a href='https://roadmap.sh/frontend' target='_blank'>프론트엔드 개발자 로드맵</a><br><a href='https://roadmap.sh/backend' target='_blank'>백엔드 개발자 로드맵</a><br><br>기술 로드맵 참고자료",
+"content": "▶ 기술 로드맵 참고자료<br><br><a href='https://roadmap.sh/frontend' target='_blank'>프론트엔드 개발자 로드맵</a><br><a href='https://roadmap.sh/backend' target='_blank'>백엔드 개발자 로드맵</a>",
 "image": null,
 "timestamp": "2025-01-30 21:40"
 },
@@ -59,7 +59,7 @@
 "id": 11,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "<a href='https://rexondex.tistory.com/guestbook/' target='_blank'>방명록 바로가기</a><br>버그 및 오류 제보나 문의사항은 방명록에 작성해주세요.",
+"content": "버그 및 오류 제보나 문의사항은 방명록 게시판에 작성해주세요.<br><a href='https://rexondex.tistory.com/guestbook/' target='_blank'>방명록 바로가기</a>",
 "image": "/images/250129_board.png",
 "timestamp": "2025-01-29 22:06"
 },
@@ -67,7 +67,7 @@
 "id": 10,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "탄막피하기 게임 해보실래요?<br><a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>🕹️바로해보기</a>",
+"content": "탄막피하기 게임 해보실래요?<br>🕹️ <a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>바로해보기</a>",
 "image": "/images/250129_dodge.png",
 "timestamp": "2025-01-29 14:28"
 },
@@ -96,18 +96,10 @@
 "timestamp": "2025-01-28 01:31"
 },
 {
-"id": 5,
-"author": "rakaso598",
-"profile_image": "/images/profile1.jpg",
-"content": "오늘의 날씨 맑음🌤️, 새해 복 많이 받으세요!",
-"image": null,
-"timestamp": "2025-01-27 21:21 (수정됨)"
-},
-{
 "id": 4,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "제 블로그도 방문해주시겠어요? ✨ 👉 <a href='https://rexondex.tistory.com/' target='_blank'>바로가기</a>",
+"content": "제 블로그도 방문해주시겠어요? 👉 <a href='https://rexondex.tistory.com/' target='_blank'>바로가기</a>",
 "image": "/images/post3.png",
 "timestamp": "2025-01-26 21:35"
 },
