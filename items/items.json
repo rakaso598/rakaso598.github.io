@@ -48,18 +48,10 @@
 "timestamp": "2025-02-04 09:50"
 },
 {
-"id": 13,
-"author": "rakaso598",
-"profile_image": "/images/profile1.jpg",
-"content": "이메일변경 또는 브랜치 삭제시에는 잔디가 없어지기도 하네요...!",
-"image": null,
-"timestamp": "2025-02-01 22:11 (수정됨)"
-},
-{
 "id": 12,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "<a href='https://roadmap.sh/frontend' target='_blank'>프론트엔드 개발자 로드맵</a><br><a href='https://roadmap.sh/backend' target='_blank'>백엔드 개발자 로드맵</a><br><br>다음에는 뭘 배워야할지 늘 고민했었는데<br>잘 정리된 로드맵이 있었어요!",
+"content": "<a href='https://roadmap.sh/frontend' target='_blank'>프론트엔드 개발자 로드맵</a><br><a href='https://roadmap.sh/backend' target='_blank'>백엔드 개발자 로드맵</a><br><br>기술 로드맵 참고자료",
 "image": null,
 "timestamp": "2025-01-30 21:40"
 },
@@ -67,7 +59,7 @@
 "id": 11,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "방명록 게시판을 발견했어요! <a href='https://rexondex.tistory.com/guestbook/' target='_blank'>방명록 바로가기</a><br>버그 및 오류 제보나 문의사항을 교환할 수 있을 것 같아요.",
+"content": "<a href='https://rexondex.tistory.com/guestbook/' target='_blank'>방명록 바로가기</a><br>버그 및 오류 제보나 문의사항은 방명록에 작성해주세요.",
 "image": "/images/250129_board.png",
 "timestamp": "2025-01-29 22:06"
 },
@@ -75,17 +67,9 @@
 "id": 10,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "탄막피하기 게임 해보실래요?🕹️ <a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>바로해보기</a>",
+"content": "탄막피하기 게임 해보실래요?<br><a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>🕹️바로해보기</a>",
 "image": "/images/250129_dodge.png",
 "timestamp": "2025-01-29 14:28"
-},
-{
-"id": 9,
-"author": "rakaso598",
-"profile_image": "/images/profile1.jpg",
-"content": "I just sponsored eslint. Go sponsor your open source dependencies!<br><a href='https://github.com/sponsors/eslint?o=sp&sc=t&sp=rakaso598' target='_blank'>https://github.com/sponsors/eslint?o=sp&sc=t&sp=rakaso598</a>",
-"image": null,
-"timestamp": "2025-01-29 14:16"
 },
 {
 "id": 8,
@@ -131,24 +115,8 @@
 "id": 3,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "타임라인을 오픈했어요!",
+"content": "타임라인을 오픈했어요.",
 "image": "/images/post1.jpg",
 "timestamp": "2025-01-26 12:30 (수정됨)"
-},
-{
-"id": 2,
-"author": "rakaso598",
-"profile_image": "/images/profile1.jpg",
-"content": "새로운 프로젝트를 시작했어요. 많이 기대해주세요!",
-"image": "/images/post2.jpg",
-"timestamp": "2025-01-25 18:45"
-},
-{
-"id": 1,
-"author": "rakaso598",
-"profile_image": "/images/profile1.jpg",
-"content": "오늘은 아무것도 안 하고 쉬는 날! 🛋️",
-"image": null,
-"timestamp": "2025-01-24 14:15"
 }
 ]
