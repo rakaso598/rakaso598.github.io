@@ -5,11 +5,11 @@
     <title>RakaFeed</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
-        /* 구글 폰트 불러오기 */
+        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
     
         body {
-            font-family: 'Noto Sans KR', Arial, sans-serif; /* 기본 폰트 설정 */
+            font-family: 'Noto Sans KR', Arial, sans-serif; 
             background-color: #f4f7f9;
             margin: 0;
             padding: 0;
@@ -32,7 +32,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             color: #34495e;
-            font-family: 'Roboto', sans-serif; /* 로고에 Roboto 폰트 적용 */
+            font-family: 'Roboto', sans-serif; 
         }
     
         .gnb .menu {
@@ -85,7 +85,7 @@
             font-weight: bold;
             font-size: 1rem;
             color: #34495e;
-            font-family: 'Roboto', sans-serif; /* 작성자에 Roboto 폰트 적용 */
+            font-family: 'Roboto', sans-serif; 
         }
     
         .post-header .timestamp {
@@ -133,6 +133,7 @@
         <a href="#">최근 게시물</a>
         <a href="https://github.com/rakaso598/" target="_blank">GitHub</a>
         <a href="https://rexondex.tistory.com/" target="_blank">Blog</a>
+        <a href="https://rakaso598.github.io/portfolio/" target="_blank">포트폴리오</a>
         <a href="https://rexondex.tistory.com/guestbook/" target="_blank">방명록</a>
     </div>
 </div>
@@ -140,7 +141,7 @@
 <div class="container" id="feed"></div>
 
 <script>
-    // JSON 파일 로드
+    
     fetch('/items/items.json')
         .then(response => {
             if (!response.ok) {
@@ -151,12 +152,12 @@
         .then(data => {
             const feed = document.getElementById('feed');
 
-            // 게시물 반복 생성
+            
             data.forEach(post => {
                 const postElement = document.createElement('div');
                 postElement.className = 'post';
 
-                // Header
+                
                 const profileImage = post.profile_image 
                     ? `<img src="${post.profile_image}" alt="Profile">`
                     : `<img style="background-color: #fff;" alt="No Profile">`;
@@ -171,7 +172,7 @@
                     </div>
                 `;
 
-                // Content
+                
                 const content = `
                     <div class="post-content">
                         ${post.content}
@@ -179,10 +180,10 @@
                     </div>
                 `;
 
-                // Combine sections
+                
                 postElement.innerHTML = header + content;
 
-                // Feed에 추가
+                
                 feed.appendChild(postElement);
             });
         })
