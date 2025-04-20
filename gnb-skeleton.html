@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 뼈대</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+        /* gnb */
+        .gnb {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        .gnb .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #34495e;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .gnb .menu {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .gnb .menu a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #5c6f7f;
+            transition: color 0.3s;
+        }
+
+        .gnb .menu a:hover {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 600px) {
+            .gnb {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .gnb .menu {
+                margin-top: 10px;
+            }
+        }
+        /* --- */
+    </style>
+</head>
+
+<body>
+    <div class="gnb">
+        <a href="https://rakaso598.github.io/" style="text-decoration: none;">
+            <div class="logo">rakaso598</div>
+        </a>
+        <div class="menu">
+            <a href="https://github.com/rakaso598/" target="_blank">GitHub</a>
+            <a href="https://rexondex.tistory.com/" target="_blank">Blog</a>
+            <a href="https://rakaso598.github.io/portfolio/" target="_blank">포트폴리오</a>
+            <a href="https://rexondex.tistory.com/guestbook/" target="_blank">방명록</a>
+        </div>
+    </div>
+
+    </body>
+
+</html>
