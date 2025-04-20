@@ -1,6 +1,14 @@
 [
 {
-"id": 19,
+"id": 13,
+"author": "rakaso598",
+"profile_image": "/images/profile1.jpg",
+"content": "포트폴리오 페이지를 오픈했어요! 진행한 프로젝트들을 열람하기 쉽도록 정리하고 있어요<br><a href='https://rakaso598.github.io/portfolio/'>✨포트폴리오 페이지 바로가기</a>",
+"image": "/images/250420-post.png",
+"timestamp": "2025-04-20 20:17"
+},
+{
+"id": 12,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "▶ 브라우저 이벤트, 버블링과 캡처링이란?<br><br>버블링은 특정 요소에서 이벤트가 발생했을 때 상위 요소로 이벤트가 전파되는 현상이고,<br>캡처링은 그 반대로 최상위 요소에서 특정 요소까지 이벤트를 전달하는 현상입니다.<br><a href='https://ko.javascript.info/bubbling-and-capturing'>버블링과 캡처링</a>",
@@ -8,7 +16,7 @@
 "timestamp": "2025-02-24 13:51"
 },
 {
-"id": 18,
+"id": 11,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "블로그 방문자 1000회 감사합니다 🎉",
@@ -16,7 +24,7 @@
 "timestamp": "2025-02-17 18:56"
 },
 {
-"id": 17,
+"id": 10,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "▶ git reset, git restore의 차이점?<br><br>git reset: 과거 특정 시점으로 돌아가 해당 시점 이후의 변경 사항을 삭제합니다.<br>git restore: 특정 파일 또는 변경 사항을 원래 상태로 되돌립니다.",
@@ -24,7 +32,7 @@
 "timestamp": "2025-02-09 20:51 (수정됨)"
 },
 {
-"id": 16,
+"id": 10,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "▶ git merge, git rebase의 차이점?<br><br>git merge: 브랜치 이력을 그대로 유지하며 두 브랜치의 변경 사항을 병합합니다.<br>git rebase: 브랜치 이력을 변경하여 한 브랜치의 변경 사항을 다른 브랜치에 덧붙입니다.",
@@ -32,23 +40,23 @@
 "timestamp": "2025-02-10 21:09 (수정됨)"
 },
 {
-"id": 15,
+"id": 9,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "▶ Next.js 프로젝트 설치하려면...<br><br>npx create-next-app@latest<br>npm run dev<br><br>git clone 후엔 꼭 npm install 진행하기",
+"content": "▶ Next.js 프로젝트 설치하려면...<br><br>npx create-next-app@latest<br>npm run dev<br><br>git clone 후 npm install 실행하기",
 "image": null,
 "timestamp": "2025-02-05 16:14"
 },
 {
-"id": 14,
+"id": 8,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "▶ 타입스크립트를 node에 설치하려면...<br><br>npm install -g typescript<br>npm install -g ts-node<br>tsc --init",
+"content": "▶ 타입스크립트를 node에 설치하려면...<br><br>npm install -g typescript<br>npm install -g ts-node",
 "image": null,
 "timestamp": "2025-02-04 09:50"
 },
 {
-"id": 12,
+"id": 7,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "▶ 기술 로드맵 참고자료<br><br><a href='https://roadmap.sh/frontend' target='_blank'>프론트엔드 개발자 로드맵</a><br><a href='https://roadmap.sh/backend' target='_blank'>백엔드 개발자 로드맵</a>",
@@ -56,7 +64,7 @@
 "timestamp": "2025-01-30 21:40"
 },
 {
-"id": 11,
+"id": 6,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "버그 및 오류 제보나 문의사항은 방명록 게시판에 작성해주세요.<br><a href='https://rexondex.tistory.com/guestbook/' target='_blank'>방명록 바로가기</a>",
@@ -64,7 +72,7 @@
 "timestamp": "2025-01-29 22:06"
 },
 {
-"id": 10,
+"id": 5,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "탄막피하기 게임 해보실래요?<br>🕹️ <a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>바로해보기</a>",
@@ -72,7 +80,7 @@
 "timestamp": "2025-01-29 14:28"
 },
 {
-"id": 8,
+"id": 4,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "HTML은 무엇일까?<br><br>하이퍼 텍스트 마크업 언어(HTML)는 웹 페이지 표시를 위해 개발된 지배적인 마크업 언어입니다. <a href='https://ko.wikipedia.org/wiki/HTML' target='_blank'>위키백과</a>",
@@ -80,7 +88,7 @@
 "timestamp": "2025-01-29 00:13"
 },
 {
-"id": 7,
+"id": 3,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "2024년 커밋 564회 달성!🎉...<br>올해도 화이팅하기, 목표는 1000회!😊",
@@ -88,23 +96,15 @@
 "timestamp": "2025-01-28 23:18"
 },
 {
-"id": 6,
+"id": 2,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "배포 저장소들을 연결지으려면...<br><br>방법1. 게시물에 하이퍼링크를 단다.<br>방법2. 디자인에 레이아웃을 추가한다.",
-"image": null,
-"timestamp": "2025-01-28 01:31"
-},
-{
-"id": 4,
-"author": "rakaso598",
-"profile_image": "/images/profile1.jpg",
-"content": "제 블로그도 방문해주시겠어요? 👉 <a href='https://rexondex.tistory.com/' target='_blank'>바로가기</a>",
+"content": "제 블로그도 방문해보세요! 👉 <a href='https://rexondex.tistory.com/' target='_blank'>바로가기</a>",
 "image": "/images/post3.png",
 "timestamp": "2025-01-26 21:35"
 },
 {
-"id": 3,
+"id": 1,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
 "content": "타임라인을 오픈했어요.",
