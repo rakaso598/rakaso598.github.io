@@ -1,168 +1,171 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RakaFeed</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
-    
-        body {
-            font-family: 'Noto Sans KR', Arial, sans-serif; 
-            background-color: #f4f7f9;
-            margin: 0;
-            padding: 0;
-        }
-    
-        .gnb {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #e1e4e8;
-        }
-    
-        .gnb .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #34495e;
-            font-family: 'Roboto', sans-serif; 
-        }
-    
-        .gnb .menu {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-    
-        .gnb .menu a {
-            text-decoration: none;
-            font-size: 1rem;
-            color: #5c6f7f;
-            transition: color 0.3s;
-        }
-    
-        .gnb .menu a:hover {
-            color: #2c3e50;
-        }
-    
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-    
-        .post {
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-    
-        .post-header {
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            border-bottom: 1px solid #e1e4e8;
-        }
-    
-        .post-header img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-            background-color: #e1e4e8;
-        }
-    
-        .post-header .author {
-            font-weight: bold;
-            font-size: 1rem;
-            color: #34495e;
-            font-family: 'Roboto', sans-serif; 
-        }
-    
-        .post-header .timestamp {
-            font-size: 0.8rem;
-            color: #7f8c8d;
-        }
-    
-        .post-content {
-            padding: 15px;
-            font-size: 1rem;
-            color: #333;
-        }
-    
-        .post-content img {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-    
-        @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-    
-            .gnb {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-    
-            .gnb .menu {
-                margin-top: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RakaFeed</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Noto Sans KR', Arial, sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .post {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid #e1e4e8;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-color: #e1e4e8;
+    }
+
+    .post-header .author {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #34495e;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .post-header .timestamp {
+      font-size: 0.8rem;
+      color: #7f8c8d;
+    }
+
+    .post-content {
+      padding: 15px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .post-content img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    /* gnb */
+    .gnb {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e1e4e8;
+    }
+
+    .gnb .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #34495e;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .gnb .menu {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .gnb .menu a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #5c6f7f;
+      transition: color 0.3s;
+    }
+
+    .gnb .menu a:hover {
+      color: #2c3e50;
+    }
+
+    @media (max-width: 600px) {
+      .gnb {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .gnb .menu {
+        margin-top: 10px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+
+    /* --- */
+  </style>
 </head>
+
 <body>
 
-<div class="gnb">
+  <div class="gnb">
     <a href="https://rakaso598.github.io/" style="text-decoration: none;">
-        <div class="logo">rakaso598</div>
-    </a>    
+      <div class="logo">rakaso598</div>
+    </a>
     <div class="menu">
-        
-        <a href="https://github.com/rakaso598/" target="_blank">GitHub</a>
-        <a href="https://rexondex.tistory.com/" target="_blank">Blog</a>
-        <a href="https://rakaso598.github.io/portfolio/" target="_blank">포트폴리오</a>
-        <a href="https://rexondex.tistory.com/guestbook/" target="_blank">방명록</a>
+      <a href="https://github.com/rakaso598/" target="_blank">GitHub</a>
+      <a href="https://rexondex.tistory.com/" target="_blank">Blog</a>
+      <a href="https://rakaso598.github.io/portfolio/" target="_blank">포트폴리오</a>
+      <a href="https://rexondex.tistory.com/guestbook/" target="_blank">방명록</a>
     </div>
-</div>
+  </div>
 
-<div class="container" id="feed"></div>
+  <div class="container" id="feed"></div>
 
-<script>
-    
+  <script>
+
     fetch('/items/items.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to load JSON file');
-            }
-            return response.json();
-        })
-        .then(data => {
-            const feed = document.getElementById('feed');
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load JSON file');
+        }
+        return response.json();
+      })
+      .then(data => {
+        const feed = document.getElementById('feed');
 
-            
-            data.forEach(post => {
-                const postElement = document.createElement('div');
-                postElement.className = 'post';
 
-                
-                const profileImage = post.profile_image 
-                    ? `<img src="${post.profile_image}" alt="Profile">`
-                    : `<img style="background-color: #fff;" alt="No Profile">`;
+        data.forEach(post => {
+          const postElement = document.createElement('div');
+          postElement.className = 'post';
 
-                const header = `
+
+          const profileImage = post.profile_image
+            ? `<img src="${post.profile_image}" alt="Profile">`
+            : `<img style="background-color: #fff;" alt="No Profile">`;
+
+          const header = `
                     <div class="post-header">
                         ${profileImage}
                         <div>
@@ -172,23 +175,24 @@
                     </div>
                 `;
 
-                
-                const content = `
+
+          const content = `
                     <div class="post-content">
                         ${post.content}
                         ${post.image ? `<img src="${post.image}" alt="Post Image">` : ''}
                     </div>
                 `;
 
-                
-                postElement.innerHTML = header + content;
 
-                
-                feed.appendChild(postElement);
-            });
-        })
-        .catch(error => console.error('Error loading JSON:', error));
-</script>
+          postElement.innerHTML = header + content;
+
+
+          feed.appendChild(postElement);
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+  </script>
 
 </body>
+
 </html>
