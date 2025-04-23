@@ -3,9 +3,9 @@
 "id": 13,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "포트폴리오 페이지를 오픈했어요! 진행한 프로젝트들을 열람하기 쉽도록 정리하고 있어요<br><a href='https://rakaso598.github.io/portfolio/'>✨포트폴리오 페이지 바로가기</a>",
+"content": "포트폴리오 페이지를 오픈했어요! 진행한 프로젝트들을 열람하기 쉽도록 정리하고 있어요<br>✨<a href='https://rakaso598.github.io/portfolio/'>포트폴리오 페이지 바로가기</a>",
 "image": "/images/250420-post.png",
-"timestamp": "2025-04-20 20:17"
+"timestamp": "2025-04-20 20:17 (수정됨)"
 },
 {
 "id": 12,
@@ -75,7 +75,7 @@
 "id": 5,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "탄막피하기 게임 해보실래요?<br>🕹️ <a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>바로해보기</a>",
+"content": "탄막피하기 게임 해보실래요?<br>🕹️<a href='https://rakaso598.github.io/dodge-the-bullets/' target='_blank'>바로해보기</a>",
 "image": "/images/250129_dodge.png",
 "timestamp": "2025-01-29 14:28"
 },
@@ -99,7 +99,7 @@
 "id": 2,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "제 블로그도 방문해보세요! 👉 <a href='https://rexondex.tistory.com/' target='_blank'>바로가기</a>",
+"content": "제 블로그도 방문해보세요 👉 <a href='https://rexondex.tistory.com/' target='_blank'>바로가기</a>",
 "image": "/images/post3.png",
 "timestamp": "2025-01-26 21:35"
 },
@@ -107,7 +107,7 @@
 "id": 1,
 "author": "rakaso598",
 "profile_image": "/images/profile1.jpg",
-"content": "타임라인을 오픈했어요.",
+"content": "타임라인을 오픈했어요!",
 "image": "/images/post1.jpg",
 "timestamp": "2025-01-26 12:30 (수정됨)"
 }
