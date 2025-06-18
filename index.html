@@ -305,9 +305,9 @@
             }
 
             .gnb {
-                flex-direction: row;
+                flex-direction: row; /* Keep logo and hamburger on the same line */
                 align-items: center;
-                height: 50px;
+                height: 50px; /* Fixed height for mobile GNB */
                 padding: var(--spacing-sm) var(--spacing-lg);
             }
 
@@ -320,7 +320,7 @@
                 width: 100%;
                 background-color: var(--color-card-background);
                 box-shadow: var(--box-shadow-strong);
-                padding: 0;
+                padding: var(--spacing-md) 0;
                 border-top: 1px solid var(--color-border);
                 transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
                 transform: translateY(-100%); /* Start off-screen */
@@ -339,14 +339,10 @@
                 padding: var(--spacing-md) var(--spacing-lg);
                 width: 100%;
                 text-align: center;
-                border-bottom: 1px solid var(--color-border);
+                border-bottom: 1px solid var(--color-border); /* Add dividers between menu items */
                 box-sizing: border-box;
             }
 
-            .gnb .menu a:first-child {
-                border-top: none;
-            }
-            
             .gnb .menu a:last-child {
                 border-bottom: none;
             }
@@ -402,7 +398,7 @@
 <body>
 
     <nav class="gnb" aria-label="Global Navigation Bar">
-        <a href="https://rakaso598.github.io" style="text-decoration: none;">
+        <a href="https://rakaso598.github.io/" style="text-decoration: none;">
             <div class="logo">rakaso598</div>
         </a>
         <div class="hamburger" id="hamburger-menu">
@@ -411,8 +407,8 @@
             <span></span>
         </div>
         <div class="menu" id="gnb-menu">
-            <a href="https://github.com/rakaso598/" rel="noopener noreferrer">GitHub</a>
-            <a href="https://rexondex.tistory.com/" rel="noopener noreferrer">Blog</a>
+            <a href="https://github.com/rakaso598/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://rexondex.tistory.com/" target="_blank" rel="noopener noreferrer">Blog</a>
             <a href="https://rakaso598.github.io/portfolio/" rel="noopener noreferrer">포트폴리오</a>
             <a href="https://rexondex.tistory.com/guestbook/" rel="noopener noreferrer">방명록</a>
         </div>
@@ -422,6 +418,7 @@
     </main>
 
     <script>
+        // Hamburger menu functionality
         const hamburger = document.getElementById('hamburger-menu');
         const gnbMenu = document.getElementById('gnb-menu');
 
