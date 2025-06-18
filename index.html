@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rakaso598.github.io</title>
+    <title>rakaso598의 게시물 피드</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <style>
@@ -14,18 +14,30 @@
         /* 공통 디자인 시스템 변수 정의 (모든 포트폴리오 페이지와 통일) */
         :root {
             /* 컬러 팔레트 */
-            --color-primary: #3498db; /* 주요 액션 버튼, 강조 색상 */
-            --color-secondary: #2980b9; /* 호버 시 색상, 보조 강조 색상 */
-            --color-text-dark: #2c3e50; /* 진한 텍스트 (제목 등) */
-            --color-text-medium: #7f8c8d; /* 중간 톤 텍스트 (본문 등) */
-            --color-text-light: #95a5a6; /* 밝은 톤 텍스트 (날짜, 작은 글씨) */
-            --color-background: #f4f8fa; /* 페이지 전체 배경 색상 */
-            --color-card-background: #fff; /* 카드, 컨테이너 배경 색상 */
-            --color-border: #e0e0e0; /* 구분선, 테두리 색상 */
-            --color-skill-tag-bg: #e7f5ff; /* 기술 스택 태그 배경 색상 */
-            --color-skill-tag-text: #3498db; /* 기술 스택 태그 텍스트 색상 */
-            --color-gnb-shadow: rgba(0, 0, 0, 0.08); /* GNB 그림자 */
-            --color-card-shadow: rgba(0, 0, 0, 0.06); /* 카드 그림자 */
+            --color-primary: #3498db;
+            /* 주요 액션 버튼, 강조 색상 */
+            --color-secondary: #2980b9;
+            /* 호버 시 색상, 보조 강조 색상 */
+            --color-text-dark: #2c3e50;
+            /* 진한 텍스트 (제목 등) */
+            --color-text-medium: #7f8c8d;
+            /* 중간 톤 텍스트 (본문 등) */
+            --color-text-light: #95a5a6;
+            /* 밝은 톤 텍스트 (날짜, 작은 글씨) */
+            --color-background: #f4f8fa;
+            /* 페이지 전체 배경 색상 */
+            --color-card-background: #fff;
+            /* 카드, 컨테이너 배경 색상 */
+            --color-border: #e0e0e0;
+            /* 구분선, 테두리 색상 */
+            --color-skill-tag-bg: #e7f5ff;
+            /* 기술 스택 태그 배경 색상 */
+            --color-skill-tag-text: #3498db;
+            /* 기술 스택 태그 텍스트 색상 */
+            --color-gnb-shadow: rgba(0, 0, 0, 0.08);
+            /* GNB 그림자 */
+            --color-card-shadow: rgba(0, 0, 0, 0.06);
+            /* 카드 그림자 */
 
             /* 게시글 특정 색상 추가 (새롭게 정의하여 통일성 유지) */
             --color-post-border: #e1e4e8;
@@ -36,14 +48,22 @@
 
 
             /* 폰트 사이즈 */
-            --font-size-body: 1rem; /* 기본 본문 폰트 사이즈 (16px) */
-            --font-size-small: 0.875rem; /* 작은 글씨 (14px) */
-            --font-size-h1: 2.5rem; /* 메인 타이틀 (예: 포트폴리오 h1) */
-            --font-size-h2: 2rem; /* 섹션 타이틀 */
-            --font-size-h3: 1.5rem; /* 프로젝트 타이틀 */
-            --font-size-gnb-logo: 1.5rem; /* GNB 로고 폰트 사이즈 */
-            --font-size-gnb-menu: 1rem; /* GNB 메뉴 폰트 사이즈 */
-            --font-size-emph: 1.125rem; /* 강조 텍스트 */
+            --font-size-body: 1rem;
+            /* 기본 본문 폰트 사이즈 (16px) */
+            --font-size-small: 0.875rem;
+            /* 작은 글씨 (14px) */
+            --font-size-h1: 2.5rem;
+            /* 메인 타이틀 (예: 포트폴리오 h1) */
+            --font-size-h2: 2rem;
+            /* 섹션 타이틀 */
+            --font-size-h3: 1.5rem;
+            /* 프로젝트 타이틀 */
+            --font-size-gnb-logo: 1.5rem;
+            /* GNB 로고 폰트 사이즈 */
+            --font-size-gnb-menu: 1rem;
+            /* GNB 메뉴 폰트 사이즈 */
+            --font-size-emph: 1.125rem;
+            /* 강조 텍스트 */
 
 
             /* 간격 */
@@ -55,9 +75,12 @@
             --spacing-xxl: 80px;
 
             /* 기타 */
-            --border-radius-sm: 8px; /* 작은 반경 (버튼, 태그) */
-            --border-radius-md: 12px; /* 중간 반경 (카드, 컨테이너) */
-            --border-radius-lg: 16px; /* 큰 반경 */
+            --border-radius-sm: 8px;
+            /* 작은 반경 (버튼, 태그) */
+            --border-radius-md: 12px;
+            /* 중간 반경 (카드, 컨테이너) */
+            --border-radius-lg: 16px;
+            /* 큰 반경 */
             --box-shadow-light: 0 6px 12px var(--color-card-shadow);
             --box-shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.1);
             --box-shadow-strong: 0 12px 24px var(--color-gnb-shadow);
@@ -66,73 +89,117 @@
         /* Body 기본 스타일 설정 */
         body {
             font-family: 'Noto Sans KR', Arial, sans-serif;
-            background-color: var(--color-background); /* 배경색 통일 */
+            background-color: var(--color-background);
+            /* 배경색 통일 */
             margin: 0;
             padding: 0;
-            line-height: 1.6; /* 줄 간격 설정 */
-            color: var(--color-text-dark); /* 기본 텍스트 색상 통일 */
-            font-size: var(--font-size-body); /* 기본 폰트 사이즈 통일 */
+            line-height: 1.6;
+            /* 줄 간격 설정 */
+            color: var(--color-text-dark);
+            /* 기본 텍스트 색상 통일 */
+            font-size: var(--font-size-body);
+            /* 기본 폰트 사이즈 통일 */
+            -webkit-font-smoothing: antialiased; /* 폰트 부드럽게 */
         }
 
-        /* Container 스타일 - 최대 너비, 중앙 정렬, 패딩 통일 */
+        /* Container 스타일 - 최대 너비, 중앙 정렬, 패딩 통일 (포트폴리오와 유사하게 조정) */
         .container {
-            max-width: 600px; /* 게시글 피드 컨테이너 너비 설정 */
-            margin: var(--spacing-xl) auto; /* 상단 여백은 GNB 높이를 고려하여 조정 */
-            padding: var(--spacing-lg); /* 일관된 패딩 */
+            max-width: 960px; /* 포트폴리오 페이지와 동일한 너비 */
+            margin: var(--spacing-xl) auto;
+            /* 상단 여백은 GNB 높이를 고려하여 조정 */
+            padding: var(--spacing-xl);
+            /* 포트폴리오 페이지와 일관된 패딩 */
+            background-color: var(--color-card-background); /* 컨테이너 배경색 */
+            box-shadow: var(--box-shadow-strong); /* 강한 그림자 */
+            border-radius: var(--border-radius-lg); /* 큰 반경 */
         }
 
-        /* Post (게시글) 스타일 */
+        /* Post (게시글) 스타일 - Project 섹션과 유사하게 조정 */
         .post {
-            background: var(--color-card-background); /* 카드 배경색 통일 */
-            border-radius: var(--border-radius-md); /* 카드 모서리 둥글기 통일 */
-            box-shadow: var(--box-shadow-light); /* 카드 그림자 통일 */
-            margin-bottom: var(--spacing-lg); /* 게시글 간 하단 여백 */
-            overflow: hidden; /* 자식 요소의 둥근 모서리 유지 */
+            background: var(--color-card-background);
+            /* 카드 배경색 통일 */
+            border-radius: var(--border-radius-md);
+            /* 카드 모서리 둥글기 통일 */
+            box-shadow: var(--box-shadow-light);
+            /* 카드 그림자 통일 */
+            margin-bottom: var(--spacing-xl);
+            /* 게시글 간 하단 여백 (포트폴리오의 project와 유사하게) */
+            overflow: hidden;
+            /* 자식 요소의 둥근 모서리 유지 */
+            padding: var(--spacing-lg); /* 카드 내부 패딩 추가 */
+            border: 1px solid var(--color-border); /* 테두리 추가 */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 호버 효과 */
+        }
+
+        .post:hover {
+            transform: translateY(-8px);
+            /* 호버 시 약간 위로 이동 */
+            box-shadow: var(--box-shadow-strong);
+            /* 호버 시 그림자 강화 */
         }
 
         /* Post Header (게시글 헤더) 스타일 */
         .post-header {
             display: flex;
             align-items: center;
-            padding: var(--spacing-md); /* 일관된 패딩 */
-            border-bottom: 1px solid var(--color-post-border); /* 구분선 색상 */
+            padding-bottom: var(--spacing-md);
+            /* 일관된 패딩 */
+            border-bottom: 1px solid var(--color-post-border);
+            /* 구분선 색상 */
+            margin-bottom: var(--spacing-md); /* 헤더와 내용 사이 간격 */
         }
 
         .post-header img {
             width: 40px;
             height: 40px;
-            border-radius: 50%; /* 원형 프로필 이미지 */
-            margin-right: var(--spacing-sm); /* 프로필 이미지와 텍스트 사이 간격 */
-            background-color: var(--color-no-profile-bg); /* 프로필 이미지 없을 때 배경색 */
-            object-fit: cover; /* 이미지가 영역을 채우도록 */
+            border-radius: 50%;
+            /* 원형 프로필 이미지 */
+            margin-right: var(--spacing-sm);
+            /* 프로필 이미지와 텍스트 사이 간격 */
+            background-color: var(--color-no-profile-bg);
+            /* 프로필 이미지 없을 때 배경색 */
+            object-fit: cover;
+            /* 이미지가 영역을 채우도록 */
         }
 
         .post-header .author {
             font-weight: bold;
-            font-size: var(--font-size-body); /* 본문 폰트 사이즈와 일관성 유지 */
-            color: var(--color-author); /* 작성자 이름 색상 */
+            font-size: var(--font-size-body);
+            /* 본문 폰트 사이즈와 일관성 유지 */
+            color: var(--color-author);
+            /* 작성자 이름 색상 */
             font-family: 'Roboto', sans-serif;
         }
 
         .post-header .timestamp {
-            font-size: var(--font-size-small); /* 작은 글씨 폰트 사이즈 통일 */
-            color: var(--color-timestamp); /* 타임스탬프 색상 */
+            font-size: var(--font-size-small);
+            /* 작은 글씨 폰트 사이즈 통일 */
+            color: var(--color-timestamp);
+            /* 타임스탬프 색상 */
         }
 
         /* Post Content (게시글 내용) 스타일 */
         .post-content {
-            padding: var(--spacing-md); /* 일관된 패딩 */
-            font-size: var(--font-size-body); /* 본문 폰트 사이즈와 일관성 유지 */
-            color: var(--color-post-text); /* 게시글 본문 텍스트 색상 */
-            line-height: 1.7; /* 본문 줄 간격 */
+            /* padding은 post 자체에 포함되었으므로 여기서는 제거하거나 최소화 */
+            font-size: var(--font-size-body);
+            /* 본문 폰트 사이즈와 일관성 유지 */
+            color: var(--color-post-text);
+            /* 게시글 본문 텍스트 색상 */
+            line-height: 1.7;
+            /* 본문 줄 간격 */
         }
 
         .post-content img {
             width: 100%;
-            max-height: 300px; /* 게시글 이미지 최대 높이 */
-            object-fit: cover;
-            border-radius: var(--border-radius-sm); /* 이미지 모서리 둥글게 */
-            margin-top: var(--spacing-sm); /* 이미지 상단 여백 */
+            max-height: 400px;
+            /* 게시글 이미지 최대 높이 증가 (더 시원하게 보이도록) */
+            object-fit: contain; /* 이미지가 잘리지 않고 전체 보이도록 contain 사용 */
+            border-radius: var(--border-radius-sm);
+            /* 이미지 모서리 둥글게 */
+            margin-top: var(--spacing-md);
+            /* 이미지 상단 여백 증가 */
+            margin-bottom: var(--spacing-md); /* 이미지 하단 여백 추가 */
+            display: block; /* 이미지 하단 불필요한 여백 제거 */
         }
 
         /* GNB (Global Navigation Bar) - 메인 페이지와 동일한 스타일 유지 */
@@ -142,37 +209,47 @@
             z-index: 1000;
             background-color: var(--color-card-background);
             box-shadow: 0 2px 5px var(--color-gnb-shadow);
-            padding: var(--spacing-sm) var(--spacing-lg); /* 일관된 패딩 */
+            padding: var(--spacing-sm) var(--spacing-lg);
+            /* 일관된 패딩 */
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid var(--color-border);
-            height: 50px; /* GNB의 일관된 높이 */
-            box-sizing: border-box; /* 패딩을 높이 계산에 포함 */
+            height: 50px;
+            /* GNB의 일관된 높이 */
+            box-sizing: border-box;
+            /* 패딩을 높이 계산에 포함 */
         }
 
         .gnb .logo {
-            font-size: var(--font-size-gnb-logo); /* GNB 로고 폰트 사이즈 통일 */
+            font-size: var(--font-size-gnb-logo);
+            /* GNB 로고 폰트 사이즈 통일 */
             font-weight: bold;
-            color: var(--color-author); /* 로고 색상 */
+            color: var(--color-text-dark);
+            /* 로고 색상 */
             font-family: 'Roboto', sans-serif;
         }
 
         .gnb .menu {
             display: flex;
-            gap: var(--spacing-md); /* 메뉴 항목 간 일관된 간격 */
+            gap: var(--spacing-md);
+            /* 메뉴 항목 간 일관된 간격 */
             align-items: center;
         }
 
         .gnb .menu a {
             text-decoration: none;
-            font-size: var(--font-size-gnb-menu); /* GNB 메뉴 폰트 사이즈 통일 */
-            color: var(--color-text-medium); /* GNB 메뉴 텍스트 색상 */
-            transition: color 0.3s ease-in-out; /* 부드러운 전환 효과 */
+            font-size: var(--font-size-gnb-menu);
+            /* GNB 메뉴 폰트 사이즈 통일 */
+            color: var(--color-text-medium);
+            /* GNB 메뉴 텍스트 색상 */
+            transition: color 0.3s ease-in-out;
+            /* 부드러운 전환 효과 */
         }
 
         .gnb .menu a:hover {
-            color: var(--color-text-dark); /* 호버 시 텍스트 색상 변경 */
+            color: var(--color-text-dark);
+            /* 호버 시 텍스트 색상 변경 */
         }
 
         /* 반응형 디자인 - 미디어 쿼리 */
@@ -189,23 +266,35 @@
             }
 
             .container {
-                padding: var(--spacing-lg); /* 태블릿에서 패딩 유지 또는 약간 줄임 */
-                margin: var(--spacing-md) auto; /* 상하 마진 조정 */
+                padding: var(--spacing-lg);
+                /* 태블릿에서 패딩 유지 또는 약간 줄임 */
+                margin: var(--spacing-md) auto;
+                /* 상하 마진 조정 */
             }
 
             .gnb {
-                flex-direction: column; /* GNB 세로 정렬 */
+                flex-direction: column;
+                /* GNB 세로 정렬 */
                 align-items: flex-start;
-                height: auto; /* 높이 자동 조정 */
+                height: auto;
+                /* 높이 자동 조정 */
                 padding-top: var(--spacing-md);
                 padding-bottom: var(--spacing-md);
             }
 
             .gnb .menu {
-                margin-top: var(--spacing-sm); /* GNB 메뉴 상단 여백 */
-                flex-direction: column; /* 모바일에서 메뉴 세로 정렬 */
+                margin-top: var(--spacing-sm);
+                /* GNB 메뉴 상단 여백 */
+                flex-direction: column;
+                /* 모바일에서 메뉴 세로 정렬 */
                 align-items: flex-start;
-                gap: var(--spacing-sm); /* 모바일 메뉴 간 간격 줄임 */
+                gap: var(--spacing-sm);
+                /* 모바일 메뉴 간 간격 줄임 */
+            }
+
+            .post {
+                margin-bottom: var(--spacing-lg); /* 모바일에서는 게시물 간 간격 조정 */
+                padding: var(--spacing-md); /* 카드 내부 패딩 조정 */
             }
         }
 
@@ -220,16 +309,25 @@
             }
 
             .container {
-                padding: var(--spacing-sm); /* 모바일에서 더 작은 패딩 */
-                margin: var(--spacing-sm) auto; /* 상하 마진 조정 */
+                padding: var(--spacing-md);
+                /* 모바일에서 더 작은 패딩 */
+                margin: var(--spacing-sm) auto;
+                /* 상하 마진 조정 */
             }
 
             .post-header {
+                padding-bottom: var(--spacing-sm);
+                margin-bottom: var(--spacing-sm);
+            }
+
+            .post {
                 padding: var(--spacing-sm);
             }
 
-            .post-content {
-                padding: var(--spacing-sm);
+            .post-content img {
+                max-height: 250px; /* 모바일 이미지 최대 높이 조정 */
+                margin-top: var(--spacing-sm);
+                margin-bottom: var(--spacing-sm);
             }
         }
     </style>
@@ -246,7 +344,7 @@
             <a href="https://rexondex.tistory.com/" target="_blank" rel="noopener noreferrer">Blog</a>
             <a href="https://rakaso598.github.io/portfolio/" rel="noopener noreferrer">포트폴리오</a>
             <a href="https://rexondex.tistory.com/guestbook/" rel="noopener noreferrer">방명록</a>
-            </div>
+        </div>
     </nav>
 
     <main class="container" id="feed" aria-live="polite">
@@ -266,6 +364,10 @@
             .then(data => {
                 const feed = document.getElementById('feed'); // 'feed' 컨테이너 요소를 가져옴
 
+                // 데이터를 최신 게시물이 먼저 오도록 역순 정렬
+                data.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+
                 // 데이터 배열을 순회하며 각 게시글에 대한 HTML 요소를 생성
                 data.forEach(post => {
                     const postElement = document.createElement('article'); // 각 게시글을 <article> 태그로 감싸 시맨틱하게 구성
@@ -283,8 +385,8 @@
                             <div>
                                 <div class="author">${post.author}</div>
                                 <div class="timestamp">${post.timestamp}</div>
-                                </div>
                             </div>
+                        </div>
                     `;
 
                     // 게시글 내용 HTML 문자열 생성
@@ -292,7 +394,7 @@
                         <div class="post-content">
                             <p>${post.content}</p>
                             ${post.image ? `<img src="${post.image}" alt="게시글 이미지: ${post.author}의 ${post.timestamp} 게시물">` : ''}
-                            </div>
+                        </div>
                     `;
 
                     // 생성된 HTML을 게시글 요소에 삽입
