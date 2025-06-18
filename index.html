@@ -99,19 +99,24 @@
             /* 기본 텍스트 색상 통일 */
             font-size: var(--font-size-body);
             /* 기본 폰트 사이즈 통일 */
-            -webkit-font-smoothing: antialiased; /* 폰트 부드럽게 */
+            -webkit-font-smoothing: antialiased;
+            /* 폰트 부드럽게 */
         }
 
         /* Container 스타일 - 최대 너비, 중앙 정렬, 패딩 통일 (포트폴리오와 유사하게 조정) */
         .container {
-            max-width: 960px; /* 포트폴리오 페이지와 동일한 너비 */
+            max-width: 960px;
+            /* 포트폴리오 페이지와 동일한 너비 */
             margin: var(--spacing-xl) auto;
             /* 상단 여백은 GNB 높이를 고려하여 조정 */
             padding: var(--spacing-xl);
             /* 포트폴리오 페이지와 일관된 패딩 */
-            background-color: var(--color-card-background); /* 컨테이너 배경색 */
-            box-shadow: var(--box-shadow-strong); /* 강한 그림자 */
-            border-radius: var(--border-radius-lg); /* 큰 반경 */
+            background-color: var(--color-card-background);
+            /* 컨테이너 배경색 */
+            box-shadow: var(--box-shadow-strong);
+            /* 강한 그림자 */
+            border-radius: var(--border-radius-lg);
+            /* 큰 반경 */
         }
 
         /* Post (게시글) 스타일 - Project 섹션과 유사하게 조정 */
@@ -126,9 +131,12 @@
             /* 게시글 간 하단 여백 (포트폴리오의 project와 유사하게) */
             overflow: hidden;
             /* 자식 요소의 둥근 모서리 유지 */
-            padding: var(--spacing-lg); /* 카드 내부 패딩 추가 */
-            border: 1px solid var(--color-border); /* 테두리 추가 */
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 호버 효과 */
+            padding: var(--spacing-lg);
+            /* 카드 내부 패딩 추가 */
+            border: 1px solid var(--color-border);
+            /* 테두리 추가 */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            /* 호버 효과 */
         }
 
         .post:hover {
@@ -146,7 +154,8 @@
             /* 일관된 패딩 */
             border-bottom: 1px solid var(--color-post-border);
             /* 구분선 색상 */
-            margin-bottom: var(--spacing-md); /* 헤더와 내용 사이 간격 */
+            margin-bottom: var(--spacing-md);
+            /* 헤더와 내용 사이 간격 */
         }
 
         .post-header img {
@@ -193,13 +202,16 @@
             width: 100%;
             max-height: 400px;
             /* 게시글 이미지 최대 높이 증가 (더 시원하게 보이도록) */
-            object-fit: contain; /* 이미지가 잘리지 않고 전체 보이도록 contain 사용 */
+            object-fit: contain;
+            /* 이미지가 잘리지 않고 전체 보이도록 contain 사용 */
             border-radius: var(--border-radius-sm);
             /* 이미지 모서리 둥글게 */
             margin-top: var(--spacing-md);
             /* 이미지 상단 여백 증가 */
-            margin-bottom: var(--spacing-md); /* 이미지 하단 여백 추가 */
-            display: block; /* 이미지 하단 불필요한 여백 제거 */
+            margin-bottom: var(--spacing-md);
+            /* 이미지 하단 여백 추가 */
+            display: block;
+            /* 이미지 하단 불필요한 여백 제거 */
         }
 
         /* GNB (Global Navigation Bar) - 메인 페이지와 동일한 스타일 유지 */
@@ -252,7 +264,27 @@
             /* 호버 시 텍스트 색상 변경 */
         }
 
-        /* 반응형 디자인 - 미디어 쿼리 */
+        /* Hamburger Menu Icon */
+        .hamburger {
+            display: none; /* Hidden by default on desktop */
+            flex-direction: column;
+            justify-content: space-around;
+            width: 24px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 1100; /* Above the menu for clicking */
+        }
+
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-text-dark);
+            border-radius: 1px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Responsive Design - Media Queries */
         @media (max-width: 768px) {
             :root {
                 /* 태블릿 크기에서 폰트 사이즈 조정 */
@@ -273,28 +305,57 @@
             }
 
             .gnb {
-                flex-direction: column;
-                /* GNB 세로 정렬 */
-                align-items: flex-start;
-                height: auto;
-                /* 높이 자동 조정 */
-                padding-top: var(--spacing-md);
-                padding-bottom: var(--spacing-md);
+                flex-direction: row; /* Keep logo and hamburger on the same line */
+                align-items: center;
+                height: 50px; /* Fixed height for mobile GNB */
+                padding: var(--spacing-sm) var(--spacing-lg);
             }
 
             .gnb .menu {
-                margin-top: var(--spacing-sm);
-                /* GNB 메뉴 상단 여백 */
+                display: none; /* Hide menu by default */
                 flex-direction: column;
-                /* 모바일에서 메뉴 세로 정렬 */
-                align-items: flex-start;
-                gap: var(--spacing-sm);
-                /* 모바일 메뉴 간 간격 줄임 */
+                position: absolute;
+                top: 50px; /* Position below GNB */
+                left: 0;
+                width: 100%;
+                background-color: var(--color-card-background);
+                box-shadow: var(--box-shadow-strong);
+                padding: var(--spacing-md) 0;
+                border-top: 1px solid var(--color-border);
+                transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                transform: translateY(-100%); /* Start off-screen */
+                opacity: 0;
+                pointer-events: none; /* Prevent interaction when hidden */
+            }
+
+            .gnb .menu.active {
+                display: flex; /* Show menu when active */
+                transform: translateY(0); /* Slide in */
+                opacity: 1;
+                pointer-events: all; /* Allow interaction */
+            }
+
+            .gnb .menu a {
+                padding: var(--spacing-md) var(--spacing-lg);
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid var(--color-border); /* Add dividers between menu items */
+                box-sizing: border-box;
+            }
+
+            .gnb .menu a:last-child {
+                border-bottom: none;
+            }
+
+            .hamburger {
+                display: flex; /* Show hamburger icon on mobile */
             }
 
             .post {
-                margin-bottom: var(--spacing-lg); /* 모바일에서는 게시물 간 간격 조정 */
-                padding: var(--spacing-md); /* 카드 내부 패딩 조정 */
+                margin-bottom: var(--spacing-lg);
+                /* 모바일에서는 게시물 간 간격 조정 */
+                padding: var(--spacing-md);
+                /* 카드 내부 패딩 조정 */
             }
         }
 
@@ -325,7 +386,8 @@
             }
 
             .post-content img {
-                max-height: 250px; /* 모바일 이미지 최대 높이 조정 */
+                max-height: 250px;
+                /* 모바일 이미지 최대 높이 조정 */
                 margin-top: var(--spacing-sm);
                 margin-bottom: var(--spacing-sm);
             }
@@ -339,7 +401,12 @@
         <a href="https://rakaso598.github.io/" style="text-decoration: none;">
             <div class="logo">rakaso598</div>
         </a>
-        <div class="menu">
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu" id="gnb-menu">
             <a href="https://github.com/rakaso598/" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://rexondex.tistory.com/" target="_blank" rel="noopener noreferrer">Blog</a>
             <a href="https://rakaso598.github.io/portfolio/" rel="noopener noreferrer">포트폴리오</a>
@@ -348,9 +415,27 @@
     </nav>
 
     <main class="container" id="feed" aria-live="polite">
-        </main>
+    </main>
 
     <script>
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger-menu');
+        const gnbMenu = document.getElementById('gnb-menu');
+
+        if (hamburger && gnbMenu) {
+            hamburger.addEventListener('click', () => {
+                gnbMenu.classList.toggle('active');
+            });
+
+            // Close menu when a link is clicked (optional, good for single-page apps)
+            gnbMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    gnbMenu.classList.remove('active');
+                });
+            });
+        }
+
+
         // JSON 데이터를 비동기적으로 가져와서 페이지에 게시글을 렌더링합니다.
         fetch('/items/items.json')
             .then(response => {
