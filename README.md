@@ -1,5 +1,4 @@
 [`👉GitHub Pages 배포화면 바로가기`](https://rakaso598.github.io)  
-[`👉Netlify 배포화면 바로가기`](https://rakaso598.netlify.app/)
 ---  
 
 `📖설명`  
